@@ -58,6 +58,7 @@ function collisionDetection() {
       score++;
     } else {
       lives--;
+    }
       if (!lives) {
         alert("GAME OVER! Score: " + score);
         document.location.reload();
