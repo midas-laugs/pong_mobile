@@ -16,7 +16,7 @@ let lives = 3;
 // Gyroscope Variables
 let gammaOffset = null;
 let isGyroscopeActive = false;
-const paddleSpeedMultiplier = 3;
+const paddleSpeedMultiplier = 1;
 let lastGamma = 0;
 
 // Drawing functions
