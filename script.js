@@ -58,8 +58,6 @@ function collisionDetection() {
       score++;
     } else {
       lives--;
-    }
-  }
       if (!lives) {
         alert("GAME OVER! Score: " + score);
         document.location.reload();
@@ -71,17 +69,11 @@ function collisionDetection() {
         paddleX = (canvas.width - paddleWidth) / 2;
       }
     }
-  
+  }
   if (ballX + ballDX > canvas.width - ballRadius || ballX + ballDX < ballRadius) {
     ballDX = -ballDX;
   }
-
-
-if (rightPressed && paddleX < canvas.width - paddleWidth) {
-    paddleX += 7;
-  } else if (leftPressed && paddleX > 0) {
-    paddleX -= 7;
-  }
+}
 
 // Device orientation handling
 function handleOrientation(event) {
