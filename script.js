@@ -8,15 +8,15 @@ let paddleX = (canvas.width - paddleWidth) / 2;
 const ballRadius = 10;
 let ballX = canvas.width / 2;
 let ballY = canvas.height - 30;
-let ballDX = 3;
-let ballDY = -3;
+let ballDX = 4;
+let ballDY = -4;
 let score = 0;
 let lives = 3;
 
 // Gyroscope Variables
 let gammaOffset = null;
 let isGyroscopeActive = false;
-const paddleSpeedMultiplier = 1;
+const paddleSpeedMultiplier = 0.5;
 let lastGamma = 0;
 
 // Drawing functions
