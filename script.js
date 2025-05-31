@@ -55,6 +55,7 @@ function collisionDetection() {
   } else if (ballY + ballDY > canvas.height - ballRadius) {
     if (ballX > paddleX && ballX < paddleX + paddleWidth) {
       ballDY = -ballDY;
+      score++;
     } else {
       lives--;
       if (!lives) {
