@@ -71,11 +71,11 @@ function collisionDetection() {
         paddleX = (canvas.width - paddleWidth) / 2;
       }
     }
-  }
+  
   if (ballX + ballDX > canvas.width - ballRadius || ballX + ballDX < ballRadius) {
     ballDX = -ballDX;
   }
-}
+
 
 if (rightPressed && paddleX < canvas.width - paddleWidth) {
     paddleX += 7;
