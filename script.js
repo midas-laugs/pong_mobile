@@ -58,6 +58,7 @@ function collisionDetection() {
       score++;
     } else {
       lives--;
+       alert("spam!");
       if (!lives) {
         alert("GAME OVER! Score: " + score);
         document.location.reload();
@@ -198,7 +199,6 @@ function draw() {
   drawScore();
   drawLives();
   collisionDetection();
-  alert("spam!");
   checkKeys();
   ballX += ballDX;
   ballY += ballDY;
