@@ -198,6 +198,7 @@ function draw() {
   drawScore();
   drawLives();
   collisionDetection();
+  alert("spam!");
   checkKeys();
   ballX += ballDX;
   ballY += ballDY;
