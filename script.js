@@ -79,11 +79,13 @@ function checkKeys() {
   // HOME = keyCode 36
   if (keyIsDown(36)) {
     paddleX -= 1;
+    alert("home is pressed");
   }
 
   // END = keyCode 35
   if (keyIsDown(35)) {
     paddleX += 1;
+    alert("end is pressed");
   }
 }
 // end of desktopfunction-------------------------------------------------------
