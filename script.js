@@ -74,6 +74,19 @@ function collisionDetection() {
     ballDX = -ballDX;
   }
 }
+// function to play the game on desktop-------------------------------------
+function checkKeys() {
+  // HOME = keyCode 36
+  if (keyIsDown(36)) {
+    paddleX -= 1;
+  }
+
+  // END = keyCode 35
+  if (keyIsDown(35)) {
+    paddleX += 1;
+  }
+}
+// end of desktopfunction-------------------------------------------------------
 
 // Device orientation handling
 function handleOrientation(event) {
@@ -183,6 +196,7 @@ function draw() {
   drawScore();
   drawLives();
   collisionDetection();
+  checkKeys();
   ballX += ballDX;
   ballY += ballDY;
   requestAnimationFrame(draw);
